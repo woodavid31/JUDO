@@ -1,0 +1,4 @@
+datasets:
+  - json_path: JUDO/realiad_samples_gt.jsonl
+validation:
+  - json_path: JUDO/realiad_samples_gt.jsonl

@@ -1,0 +1,4 @@
+datasets:
+  - json_path: JUDO/domain_qa_goods.jsonl
+validation:
+  - json_path: JUDO/domain_qa_goods.jsonl
