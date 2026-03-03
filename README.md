@@ -1,6 +1,12 @@
-## Introduction
+# JUDO (ICLR 2026)
 
-This is the repository for ICLR 26 "JUDO: A Juxtaposed Domain-oriented Multimodal Reasoner for Industrial Anomaly QA"
+Official implementation of  
+**"JUDO: A Juxtaposed Domain-oriented Multimodal Reasoner for Industrial Anomaly QA"**
+
+Base model: Qwen2.5-VL-7B  
+Official trained checkpoint:  
+https://huggingface.co/woodavid31/JUDO
+
 
 ## Installation
 
@@ -10,17 +16,36 @@ conda activate judo
 bash setup.sh
 ```
 
+Tested with PyTorch 2.5+ and CUDA-enabled GPUs.  
+Multi-GPU is recommended for GRPO training.
+
+
 ## Training
+
+The training script performs:
+
+- Segmentation SFT  
+- Domain knowledge SFT  
+- GRPO alignment  
 
 ```bash
 cd open-r1-multimodal
 bash seg_sft_grpo.sh
 ```
 
+
 ## Dataset
 
-You can download the dataset of MMAD from [here](https://huggingface.co/datasets/jiang-cc/MMAD)
-You can download the dataset of REALIAD from [here](https://huggingface.co/datasets/Real-IAD/Real-IAD/tree/main/realiad_512)
+Download datasets:
+
+MMAD  
+https://huggingface.co/datasets/jiang-cc/MMAD  
+
+REAL-IAD  
+https://huggingface.co/datasets/Real-IAD/Real-IAD/tree/main/realiad_512  
+
+Place datasets according to the paths expected in the training scripts.
+
 
 ## Evaluation
 
@@ -29,7 +54,40 @@ cd eval
 python eval_seg_mult.py
 ```
 
+To evaluate the official JUDO model, set the model path to:
+
+```
+woodavid31/JUDO
+```
+
+Or replace it with your locally trained checkpoint.
+
+
+## Output Format
+
+Model outputs follow:
+
+```
+<seg>...</seg>
+<think>...</think>
+<answer>...</answer>
+```
+
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@inproceedings{judo2026,
+  title={JUDO: A Juxtaposed Domain-Oriented Multimodal Reasoner for Industrial Anomaly QA},
+  author={Kang, Hyunju and Lee, Woohyun and Kim, Jaewon and Park, Hogun},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2026}
+}
+```
+
+
 ## Acknowledgement
 
 This work was supported by Institute of Information & Communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (MSIT) (RS-2025-02653113, High-Performance Research AI Computing Infrastructure Support at the 2 PFLOPS Scale)
-
