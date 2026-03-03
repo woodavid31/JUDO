@@ -16,7 +16,6 @@ conda activate judo
 bash setup.sh
 ```
 
-Tested with PyTorch 2.5+ and CUDA-enabled GPUs.  
 Multi-GPU is recommended for GRPO training.
 
 
