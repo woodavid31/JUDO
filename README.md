@@ -73,19 +73,6 @@ Model outputs follow:
 ```
 
 
-## Citation
-
-If you use this work, please cite:
-
-```bibtex
-@inproceedings{judo2026,
-  title={JUDO: A Juxtaposed Domain-Oriented Multimodal Reasoner for Industrial Anomaly QA},
-  author={Kang, Hyunju and Lee, Woohyun and Kim, Jaewon and Park, Hogun},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  year={2026}
-}
-```
-
 
 ## Acknowledgement
 
