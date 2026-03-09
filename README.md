@@ -1,8 +1,7 @@
 # JUDO (ICLR 2026)
 
 Official implementation of  
-**"JUDO: A Juxtaposed Domain-oriented Multimodal Reasoner for Industrial Anomaly QA"**
-📄 Paper: [https://openreview.net/forum?id=XW4mROtaVb](https://openreview.net/forum?id=XW4mROtaVb&referrer=%5BAuthor+Console%5D%28%2Fgroup%3Fid%3DICLR.cc%2F2026%2FConference%2FAuthors%23your-submissions%29)
+[**"JUDO: A Juxtaposed Domain-oriented Multimodal Reasoner for Industrial Anomaly QA"**](https://openreview.net/forum?id=XW4mROtaVb&referrer=%5BAuthor+Console%5D%28%2Fgroup%3Fid%3DICLR.cc%2F2026%2FConference%2FAuthors%23your-submissions%29)
 
 Base model: Qwen2.5-VL-7B  
 Official trained checkpoint:  
