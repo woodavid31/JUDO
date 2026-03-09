@@ -56,7 +56,7 @@ python eval_seg_mult.py
 To evaluate the official JUDO model, set the model path to:
 
 ```
-woodavid31/JUDO
+./JUDO
 ```
 
 Or replace it with your locally trained checkpoint.
